@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+    margin: 0;
+    font-family: "Poppins",sans-serif;
+}
+:root{
+    /* Primary Colors */
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+
+    /* Secondary Colors */
+    --color-light-grey: #F2F2F2;
+    --color-medium-grey: #D9D9D9;
+    --color-dark-grey: #A6A6A6;
+
+    /* Accent Colors */
+    --color-blue-grey: #607D8B;
+    --color-soft-black: #333333;
+
+    /* Text Colors */
+    --color-primary-text: #000000; /* Black */
+    --color-secondary-text: #575757; /* Soft black/grey */
+
+    /* Feedback Colors */
+    --color-error: #D32F2F; /* Error */
+    --color-warning: #FBC02D; /* Warning */
+    --color-success: #388E3C; /* Success */
+}
+
+#root{
+    height: 100vh;
+    width: 100vw;
+}
+#root_child{
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#root_child{
+    display: flex;
+}
+#left_child{
+    padding: 1rem 1rem;
+    margin: 0.2px;
+    position:sticky;
+    width: 13%;
+    top: 0;
+    left: 0;
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+#right_child{
+    width: 100%;
+    height: 200vh;
+}
+#linkList{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+.links{
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+}
+#entnt_logo{
+    width: 90%;
+    margin-bottom: 5rem;
+}
+#settings{
+    position: absolute;
+    bottom: 3rem;
+    border-top: 1px solid var(--color-dark-grey);
+}
+#settings a{
+    padding: 1rem 2rem;
+    width: 100%;
+    text-decoration: none;
+    color: #000000;
+}
+.links.selected{
+    background-color: var(--color-medium-grey);
+    border-radius: 2rem;
+}
+.navIcons{
+    width: 1.3rem;
+    height: 1.3rem;
+}
+#menu{
+    font-size: 0.9rem;
+    width: 80%;
+    color: var(--color-dark-grey);
+    padding: 1rem;
+}

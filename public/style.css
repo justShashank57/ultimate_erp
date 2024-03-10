@@ -150,3 +150,14 @@ body{
     gap: 3rem;
     align-items: center;
 }
+#lineCharts{
+    display: flex;
+    justify-content: space-between;
+}
+.lineChart{
+    width: 40%;
+    background-color: var(--color-white);
+    padding: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 1rem;
+}

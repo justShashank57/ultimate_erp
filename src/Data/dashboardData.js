@@ -95,7 +95,6 @@ export default [
     // charts
     [
         {
-          "chart": {
             "title": "Sales Distribution by Category",
             "type": "pieChart",
             "data": [
@@ -105,21 +104,20 @@ export default [
               {"category": "Books", "value": 15},
               {"category": "Other", "value": 10}
             ]
-          }
         },
         {
-          "chart": {
             "title": "Sales Trends Over Time",
+            "name":"Sales",
             "type": "lineChart",
-            "data": [
-              {"month": "January", "sales": 20000},
-              {"month": "February", "sales": 22000},
-              {"month": "March", "sales": 25000},
-              {"month": "April", "sales": 28000},
-              {"month": "May", "sales": 30000},
-              {"month": "June", "sales": 32000}
-            ]
-          }
-        }
+            "categories": ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+            "data": [20000,22000,21000,24000,27000,32000,31000,32000,35000]
+        },
+        {
+          "title": "Order Trends Over Time",
+          "name":"Orders",
+          "type": "lineChart",
+          "categories": ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+          "data": [100,120,110,140,170,220,210,220,250]
+       },
     ]
 ]  

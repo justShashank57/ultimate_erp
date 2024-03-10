@@ -46,7 +46,6 @@ body{
     width: 13%;
     top: 0;
     left: 0;
-    border-right: 1px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,6 +54,7 @@ body{
 #right_child{
     width: 100%;
     height: 200vh;
+    background-color: var(--color-light-grey);
 }
 #linkList{
     display: flex;
@@ -101,4 +101,52 @@ body{
     width: 80%;
     color: var(--color-dark-grey);
     padding: 1rem;
+}
+#metricRoot{
+    display: grid;
+    position: relative;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill,minmax(18rem,1fr));
+    padding: 5rem 0 3rem 0;
+    align-items: center;
+}
+#metricCard{
+    display: flex;
+    width: 13rem;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    border-radius: 0.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+}
+.metricValue{
+    color: var(--color-soft-black);
+    font-weight: 500;
+}
+.metricTitle{
+    color: var(--color-secondary-text);
+}
+#lastDays{
+    position: absolute;
+    top: 1rem;
+    right: 4rem;
+}
+#lastDays select{
+    background-color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+}
+#overview{
+    padding: 3rem 4rem 0 4rem;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+#linkRoot{
+    display: flex;
+    padding: 1.5rem 4rem;
+    gap: 3rem;
+    align-items: center;
 }

@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <div id='left_child'>
             <img id='entnt_logo' src="entnt.svg" alt="logo" />
-            <div id='menu'>Menu</div>
+            <div id='menu'>MAIN MENU</div>
           <div id='linkList'>
             <Link data-key={0} onClick={handleSelected} className={selected==0?'links selected':'links'} to='/'>
               <img className='navIcons' src="dashboard.png" alt="dash" />

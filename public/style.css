@@ -33,7 +33,6 @@ body{
 }
 #root_child{
     height: 100%;
-    overflow-y: scroll;
     overflow-x: hidden;
 }
 #root_child{
@@ -53,8 +52,13 @@ body{
 }
 #right_child{
     width: 100%;
-    height: 200vh;
+    height: auto;
     background-color: var(--color-light-grey);
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-bottom: 2rem;
 }
 #linkList{
     display: flex;
@@ -184,5 +188,16 @@ body{
     height: 20rem;
     padding: 2rem;
     border-radius: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#parentColumnChart{
+    display: flex;
+    justify-content: center;
+}
+#columnChart{
+    border-radius: 1rem;
+    background-color: var(--color-white);
+    width: 90%;
+    padding: 1rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }

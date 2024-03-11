@@ -5,6 +5,7 @@ import MetricCard from '../Components/MetricCard';
 import LineChart from '../Components/LineChart';
 import PieChart from '../Components/PieChart';
 import AreaChart from '../Components/AreaChart';
+import ColumnChart from '../Components/ColumnChart';
 
 function Dashboard() {
   const[lastDays,setLastDays] = React.useState(0);
@@ -74,6 +75,12 @@ function Dashboard() {
             </div>
             <div id="pieChart">
                <PieChart chartObject={chartsArray[0]}/>
+            </div>
+       </div>
+
+       <div id='parentColumnChart'>
+            <div id="columnChart">
+               <ColumnChart chartObject={chartsArray[4]}/>
             </div>
        </div>
 

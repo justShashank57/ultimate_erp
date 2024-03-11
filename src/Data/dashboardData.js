@@ -95,15 +95,10 @@ export default [
     // charts
     [
         {
-            "title": "Sales Distribution by Category",
+            "title": "Sales Distribution % by Category",
             "type": "pieChart",
-            "data": [
-              {"category": "Electronics", "value": 30},
-              {"category": "Clothing", "value": 25},
-              {"category": "Home & Garden", "value": 20},
-              {"category": "Books", "value": 15},
-              {"category": "Other", "value": 10}
-            ]
+            "labels":['Electronics', 'Clothing', 'Home & Garden', 'Books','Other'],
+            "data": [30,25,20,15,10]
         },
         {
             "title": "Sales Trends Over Time",
@@ -119,5 +114,27 @@ export default [
           "categories": ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
           "data": [100,120,110,140,170,220,210,220,250]
        },
+       {
+           "title":"Sales Trends Distribution",
+           "series":[
+            {
+              "name": "Electronics",
+              "data": [45, 52, 38, 45, 19, 23, 30]
+            },
+            {
+              "name": "Clothing",
+              "data": [30, 45, 40, 35, 55, 60, 62]
+            }
+          ],
+          "categories":[
+            "01 Jan",
+            "02 Jan",
+            "03 Jan",
+            "04 Jan",
+            "05 Jan",
+            "06 Jan",
+            "07 Jan"
+          ]
+       }
     ]
 ]  

@@ -132,6 +132,7 @@ body{
     position: absolute;
     top: 1rem;
     right: 4rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 #lastDays select{
     background-color: white;
@@ -160,4 +161,28 @@ body{
     padding: 1rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 1rem;
+}
+#parentPieChart{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 4rem;
+
+}
+#pieChart{
+    background-color: var(--color-white);
+    padding: 2rem;
+    width: 31.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#areaChart{
+    background-color: var(--color-white);
+    width: 31.5rem;
+    height: 20rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }

@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import DashBoardData from '../Data/dashboardData';
 import MetricCard from '../Components/MetricCard';
 import LineChart from '../Components/LineChart';
+import PieChart from '../Components/PieChart';
+import AreaChart from '../Components/AreaChart';
 
 function Dashboard() {
   const[lastDays,setLastDays] = React.useState(0);
@@ -55,7 +57,7 @@ function Dashboard() {
        {/* charts */}
        <div id="parentLineCharts">
             <h1 id='analysis' style={{fontWeight:"600",padding:"1rem 4rem"}}>Analysis</h1>
-            <div id='lineCharts' style={{padding:"1rem 4rem"}}>
+            <div id='lineCharts' style={{padding:"2rem 4rem"}}>
                  
                  <div className='lineChart' id='salesLineChart'>
                    <LineChart chartObject={chartsArray[1]}/>
@@ -64,6 +66,14 @@ function Dashboard() {
                  <div className='lineChart' id='orderLineChart'>
                    <LineChart chartObject={chartsArray[2]}/>
                  </div>
+            </div>
+       </div>
+       <div id='parentPieChart'>
+            <div id="areaChart">
+               <AreaChart chartObject={chartsArray[3]}/>
+            </div>
+            <div id="pieChart">
+               <PieChart chartObject={chartsArray[0]}/>
             </div>
        </div>
 

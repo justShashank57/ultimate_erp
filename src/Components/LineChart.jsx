@@ -19,11 +19,11 @@ function LineChart(props){
           enabled: false
         },
         stroke: {
-          curve: 'straight'
+          curve: 'smooth'
         },
         title: {
           text: props.chartObject.title,
-          align: 'left'
+          align: 'left',
         },
         grid: {
           row: {

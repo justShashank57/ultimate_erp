@@ -7,7 +7,7 @@ function Navbar() {
   function handleSelected(event){
            let k = parseInt(event.currentTarget.getAttribute('data-key'));
            setSelected(k);
-           console.log(k);
+          //  console.log(k);
   }
   return (
     <div id='left_child'>

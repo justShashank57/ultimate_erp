@@ -18,7 +18,6 @@ function Calendar() {
     // Fetch and display orders for the clicked date
     const ordersForDay = events.filter(event => event.start === info.dateStr).map(event => event.extendedProps.order);
     if(ordersForDay.length>0){
-        console.log(ordersForDay);
         setOrderLayer(true);
         setOrdersOnDate(ordersForDay);
     }

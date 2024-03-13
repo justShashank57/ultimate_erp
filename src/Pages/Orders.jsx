@@ -29,7 +29,7 @@ function Orders() {
          </div>
 
          <div id='tableRoot'>
-             <Table data={tableData} allowClick={true}/>
+             <Table data={tableData} allowClick={true} showItems={false}/>
          </div>
          
          <div id='calendarRoot'>

@@ -1,8 +1,14 @@
 import React from 'react'
 
-function Table({data,allowClick}) {
+function Table({data,allowClick,showItems}) {
   const[layer,setLayer] = React.useState(false);
   const [selectedOrder, setSelectedOrder] = React.useState(null);
+  let itemNames;
+  if(selectedOrder){
+     itemNames = selectedOrder.items.map((item)=>{
+        return item.itemName;
+     }).join(', ')
+  }
 
   function viewOrder(event){
            if(allowClick==false) return;
@@ -31,7 +37,9 @@ function Table({data,allowClick}) {
   const tabElements = sortedData.map((obj)=>{
        let statusClass = `status ${obj.status}`;
        let rowClass = `childRows ${obj.orderId}`;
-
+       const items = obj.items.map((item)=>{
+             return item.itemName;
+       }).join(', ')
        return (
              <tr className={rowClass} onClick={viewOrder}>
                 <td className='childCells'>{obj.customerName}</td>
@@ -39,6 +47,7 @@ function Table({data,allowClick}) {
                 <td className='childCells orders'>{obj.orderId}</td>
                 <td className='childCells'>{obj.orderDate}</td>
                 <td className='childCells money'>{obj.totalAmount}</td>
+                {showItems && <td className='childCells money'>{items}</td>}
              </tr>
        )
   })
@@ -51,6 +60,7 @@ function Table({data,allowClick}) {
             <td>Order ID</td>
             <td>Order Date</td>
             <td>Amount ($)</td>
+            {showItems && <td>Items</td>}
           </tr>
           {tabElements}
        </table>
@@ -82,7 +92,7 @@ function Table({data,allowClick}) {
                         </tr>
                         <tr>
                             <td className='att'>Items</td>
-                            <td>{selectedOrder.items[0].itemName}, {selectedOrder.items[1] && selectedOrder.items[1].itemName}</td>
+                            <td>{itemNames}</td>
                         </tr>
                         <tr>
                             <td className='att'>Amount</td>

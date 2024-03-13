@@ -42,7 +42,7 @@ function Calendar() {
     {orderLayer && ordersOnDate && 
      <div id='layerRoot' onClick={handleOrderLayer}>
         <div>
-           <Table data={ordersOnDate} allowClick={false}/>
+           <Table data={ordersOnDate} allowClick={false} showItems={true}/>
         </div>
      </div>
     }

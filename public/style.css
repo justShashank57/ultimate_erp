@@ -78,7 +78,7 @@ body{
     gap: 1rem;
 }
 #entnt_logo{
-    width: 90%;
+    width: 80%;
     margin-bottom: 5rem;
 }
 #settings{
@@ -230,6 +230,7 @@ table,th,td{
     border-collapse: collapse;
 }
 td{
+    white-space: nowrap;
     padding: 0.7rem 1rem;
     font-weight: 300;
     font-size: 0.9rem;
@@ -294,7 +295,7 @@ table{
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    width: 35rem;
+    /* width: 35rem; */
     z-index: 4;
 }
 .att{

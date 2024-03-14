@@ -290,7 +290,7 @@ table{
     backdrop-filter: blur(10px);
     z-index: 3;
 }
-#layerRoot div{
+#layerRoot>div{
     background-color: var(--color-white);
     padding: 2rem;
     border-radius: 1rem;
@@ -347,9 +347,8 @@ table{
     border-radius: 1rem;
     height: 10rem;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding: 1rem;
 }
 .edit{
@@ -390,15 +389,70 @@ table{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 #add{
-    background-color: black;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content:end;
+    gap: 2.5rem;
+}
+#add img{
+    width: 2.5rem;
 }
 #add p{
-    color: white;
     margin: 0;
     padding: 0.5rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
+}
+#pom{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+#pom h1{
+     font-size: 2.3rem;
+     font-weight: 600;
+     color: var(--color-blue-grey);
+     margin-bottom: 0;
+}
+#pom p{
+    text-align: center;
+}
+#totalProducts{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+#totalProducts h1{
+    font-size: 4rem;
+    margin: 0;
+    color: var(--color-blue-grey);
+}
+#addProducts{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+#addProducts>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.inputNames{
+    color: var(--color-blue-grey);
+    margin: 0;
+}
+#createProduct{
+    background-color: var(--color-primary-text);
+    color: white;
+    border: none;
+    padding: 0.3rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+#fill{
+    font-size: 0.8rem;
+    color: var(--color-error);
+    text-align: center;
 }

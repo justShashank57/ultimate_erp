@@ -1,13 +1,30 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom';
 
 
 function Navbar() {
+  
   const [selected,setSelected] = React.useState(0);
+  const location = useLocation();
+  useEffect(()=>{
+        switch(location.pathname){
+          case '/':
+            setSelected(0)
+            break;
+          case '/products':
+            setSelected(1)
+            break;
+          case '/orders':
+            setSelected(2)
+            break;
+          default:
+            break;
+        }
+  },[location])
   function handleSelected(event){
            let k = parseInt(event.currentTarget.getAttribute('data-key'));
            setSelected(k);
-          //  console.log(k);
+          //  console.log(k)
   }
   return (
     <div id='left_child'>

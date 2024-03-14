@@ -66,7 +66,7 @@ This will start the app in development mode. Open http://localhost:3000 to view 
 
 1. Time Period Drop Down
 
-![Time Period Drop Down](/Screenshots/Screenshot (506).png)
+![Time Period Drop Down](/Screenshots/dropDown.png)
 
 # Contributing
 

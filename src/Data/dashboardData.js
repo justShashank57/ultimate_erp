@@ -79,10 +79,6 @@ export default [
   // quick links
   [
     {
-      name: "Sales Reports",
-      url: "/salesReports",
-    },
-    {
       name: "Products",
       url: "/products",
     },

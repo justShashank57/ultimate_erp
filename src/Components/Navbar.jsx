@@ -28,25 +28,25 @@ function Navbar() {
   }
   return (
     <div id='left_child'>
-            <img id='entnt_logo' src="entnt.svg" alt="logo" />
-            <div id='menu'>MAIN MENU</div>
-          <div id='linkList'>
-            <Link data-key={0} onClick={handleSelected} className={selected==0?'links selected':'links'} to='/'>
-              <img className='navIcons' src="dashboard.png" alt="dash" />
-              <span>Dashboard</span>
-            </Link>
-            <Link data-key={1} onClick={handleSelected} className={selected==1?'links selected':'links'} to='/products'>
-              <img className='navIcons' src="product.png" alt="products" />
-              <span>Products</span>
-            </Link>
-            <Link data-key={2} onClick={handleSelected} className={selected==2?'links selected':'links'} to='/orders'>
-              <img className='navIcons' src="shopping-cart.png" alt="cart" />
-              <span>Orders</span>
-            </Link>
+               <img id='entnt_logo' src="entnt.webp" alt="logo" />
+               <div id='menu'>MAIN MENU</div>
+               <div id='linkList'>
+               <Link data-key={0} onClick={handleSelected} className={selected==0?'links selected':'links'} to='/'>
+                 <img className='navIcons' src="dashboard.webp" alt="dash" />
+                 <span>Dashboard</span>
+               </Link>
+               <Link data-key={1} onClick={handleSelected} className={selected==1?'links selected':'links'} to='/products'>
+                 <img className='navIcons' src="product.webp" alt="products" />
+                 <span>Products</span>
+               </Link>
+               <Link data-key={2} onClick={handleSelected} className={selected==2?'links selected':'links'} to='/orders'>
+                 <img className='navIcons' src="shopping-cart.webp" alt="cart" />
+                 <span>Orders</span>
+               </Link>
           </div>
           <div id='settings'>
                <a className='links' href="#">
-                <img className='navIcons' src="setting.png" alt="setting" />
+                <img className='navIcons' src="setting.webp" alt="setting" />
                 <span>Settings</span>
                </a>
           </div>

@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar';
 import Products from './Pages/Products';
 import Orders from './Pages/Orders'
 import { BrowserRouter as Router,Route,Routes } from 'react-router-dom';
+import PhoneNav from './Components/PhoneNav';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
     <div id='root_child'>
        <Router>
           <Navbar/>
+          <PhoneNav/>
           <div id='right_child'>
             <Routes>
               <Route exact path='/' element={<Dashboard/>}/>

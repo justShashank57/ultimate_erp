@@ -10,6 +10,12 @@ function AreaChart({chartObject}){
             dataLabels: {
               enabled: false
             },
+            responsive: [{
+              breakpoint: 785,
+              chart:{
+                 height:400
+              }
+            }],
             title: {
                 text: chartObject.title,
                 align: 'left'

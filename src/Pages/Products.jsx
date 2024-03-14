@@ -43,7 +43,7 @@ function addProduct(){
     <div id='productRoot'>
          <div id='boxesRoot'>
               <div onClick={()=>setShowLayer(true)} id='add' style={{cursor:"pointer"}}>
-                   <img src="plus.png" alt="plus_sign" />
+                   <img src="plus.webp" alt="plus_sign" />
                    <p>Add Product</p>
               </div>
               <div id='pom'>
@@ -57,7 +57,9 @@ function addProduct(){
          </div>
          <div id='productTableRoot'>
               <h1 id='invent'>Inventory</h1>
-              <ProductTable data={data} setData={setData}/>
+              <div id='prodTableRoot'>
+                <ProductTable data={data} setData={setData}/>
+              </div>
          </div>
          {
            showLayer &&

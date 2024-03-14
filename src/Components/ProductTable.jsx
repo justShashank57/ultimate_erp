@@ -73,8 +73,8 @@ function ProductTable({ data, setData }) {
           <td>{obj.price}</td>
           <td>
               <div style={{display:"flex"}} className='editAndDelete'>
-                <img src='pencil.png' onClick={(event) =>handleEditClick(event, obj)}></img>
-                <img src='bin.png' onClick={(event)=>deleteRow(event,obj)}></img>
+                <img src='pencil.webp' onClick={(event) =>handleEditClick(event, obj)}></img>
+                <img src='bin.webp' onClick={(event)=>deleteRow(event,obj)}></img>
               </div>
           </td>
         </tr>
@@ -89,7 +89,7 @@ function ProductTable({ data, setData }) {
           <td><input className='editInputs' type="number" required name="stockQuantity" value={editFormData.stockQuantity} onChange={handleEditFormChange} /></td>
           <td><input className='editInputs' type="text" required name="category" value={editFormData.category} onChange={handleEditFormChange} /></td>
           <td><input className='editInputs' type="text" required name="price" value={editFormData.price} onChange={handleEditFormChange} /></td>
-          <td><img className='edit' src='check.png' onClick={handleSaveClick}></img></td>
+          <td><img className='edit' src='check.webp' onClick={handleSaveClick}></img></td>
         </tr>
       );
     } else{
@@ -101,7 +101,7 @@ function ProductTable({ data, setData }) {
           <td>{obj.category}</td>
           <td>{obj.price}</td>
           <td>
-            <img onClick={()=>setClickedRow(obj.productId)} class='edit' src='meatball.png' ></img>
+            <img onClick={()=>setClickedRow(obj.productId)} class='edit' src='meatball.webp' ></img>
           </td>
         </tr>
       );

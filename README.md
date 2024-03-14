@@ -1,70 +1,80 @@
+# Project Overview
+
+The Simplified ERP System is designed to efficiently manage basic business operations through a user-friendly interface. The system provides essential functionalities for dashboard overview, products management, and orders management, along with an optional feature for an orders calendar view.
+
+# Objectives
+
+1. Develop a responsive and user-friendly interface for key business management aspects.
+2. Utilize React for building modular components and managing application state.
+3. Implement React Router for seamless navigation between different ERP system sections.
+4. Create a design suitable for both desktop and mobile devices.
+
+# Features
+
+## Dashboard
+
+Displays key metrics and features, offering quick navigation to product and order management pages.
+
+## Products Management
+
+Manages product listings with functionalities to add, edit, and delete products.
+
+## Orders Management 
+
+Facilitates viewing and handling orders with options for detailed view and status updates.
+
+## Orders Calendar View
+A calendar interface displaying orders by expected delivery dates.
+
+# Technology Stack
+
+1. React for building the front-end application.
+2. React Router for navigation.
+3. React Apex-charts for Data Visualization and Full-Calendar for Calendar View Implementation.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Prerequisites
 
-In the project directory, you can run:
+Ensure you have Node.js and npm installed on your system.
+
+### `npm install npm@latest -g`
+
+## Installation
+
+1. Clone the repository
+
+### `git clone https://github.com/justShashank57/ultimate_erp.git`
+
+2. Install NPM packages
+
+### `cd ultimate_erp`
+### `npm install`
+
+# Usage
+
+To run the application:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This will start the app in development mode. Open http://localhost:3000 to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Features and Functionalities
 
-### `npm test`
+1. Time Period Drop Down
+![Time Period Drop Down](/Screenshots/Screenshot (506).png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Contributing
 
-### `npm run build`
+Contributions are welcome and will help make this project even better. Please follow these steps to contribute:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Fork the Project
+2. Create your Feature Branch (git checkout -b feature/AmazingFeature)
+3. Commit your Changes (git commit -m 'Add some AmazingFeature')
+4. Push to the Branch (git push origin feature/AmazingFeature)
+5. Open a Pull Request
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -84,9 +84,9 @@ This will start the app in development mode. Open http://localhost:3000 to view 
 
 ![Edit](/Screenshots/product2.png)
 
-![Edit](/Screenshots/product1.png)
+![Edit](/Screenshots/product3.png)
 
-5. Add new Products in Product Table
+5. Add New Products in Product Table
 
 ![Add](/Screenshots/add.png)
 

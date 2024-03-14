@@ -68,6 +68,44 @@ This will start the app in development mode. Open http://localhost:3000 to view 
 
 ![Time Period Drop Down](/Screenshots/dropDown.png)
 
+2. Hover on Charts to See the Data
+
+![Line Chart](/Screenshots/lineChartHover.png)
+
+![Pie Chart](/Screenshots/pieChart.png)
+
+3. Quick Links
+
+![Quick Links](/Screenshots/quickLinks.png)
+
+4. Edit or Delete Data in Products Table
+
+![Edit](/Screenshots/product1.png)
+
+![Edit](/Screenshots/product2.png)
+
+![Edit](/Screenshots/product1.png)
+
+5. Add new Products in Product Table
+
+![Add](/Screenshots/add.png)
+
+6. Filter the Orders Table by Clicking on Different `Order Status`.
+
+![Filter](/Screenshots/filter1.png)
+
+![Filter](/Screenshots/filter2.png)
+
+7. Hover over Order Table Rows and Click on a Row to view Specific Order
+
+![View Order](/Screenshots/viewOrder.png)
+
+8. Order Calendar View
+
+![Order Calendar](/Screenshots/calendarView.png)
+
+![Interaction](/Screenshots/orderOnDate.png)
+
 # Contributing
 
 Contributions are welcome and will help make this project even better. Please follow these steps to contribute:
